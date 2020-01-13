@@ -1,0 +1,45 @@
+/* Carrusel */
+.slider .load{
+    animation: slide 2s;
+}
+
+.slider{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    animation: slide 15s infinite;
+}
+
+.slider .content{
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+
+@keyframes slide{
+    0%, 33%{
+        background-image: url(../resource/portada2.png);	    
+        
+    }
+    66%, 66.01%{
+        
+        background-image: url(../resource/portada3.png);
+        
+
+    }
+    99.99%{
+        background-image: url(../resource/portada4.png);
+        
+    }
+
+    100%{
+        background-image: url(../resource/portada2.png);
+    }
+    
+}
+
